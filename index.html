@@ -136,13 +136,20 @@ function type(){
 }
 
 function showFinal(){
-  let q = document.createElement("div");
-  q.innerHTML = `
+  document.getElementById("loveText").innerHTML = `
+    <h3>Our Beautiful Moments 📸</h3>
+
+    <img src="./photo1.jpg" style="width:90px;border-radius:10px;margin:5px;">
+    <img src="./photo2.jpg" style="width:90px;border-radius:10px;margin:5px;">
+    <img src="./photo3.jpg" style="width:90px;border-radius:10px;margin:5px;">
+
+    <br><br>
+
     <h3>Will you always be mine? 💖</h3>
     <button onclick="yesLove()">YES 😭💞</button>
     <button id="noBtn" onmouseover="moveNo()">NO 😏</button>
   `;
-  document.getElementById("loveText").appendChild(q);
+}
 }
 
 function moveNo(){
